@@ -146,11 +146,6 @@
                     label</a><br />
         </ul>
     </div>
-    <!-- Contact Us section
-    <div>
-        <h2>Contact Us</h2>
-        <br />
-    </div> -->
     <!-- Footer Section -->
     <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/footer.png" align="center" />
 </div>
