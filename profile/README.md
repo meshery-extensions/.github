@@ -127,7 +127,7 @@
         <h2>Community and Contributing</h2>
         <p>Please do! Code and non-code contributions are welcome. This project is community-built and fosters collaboration. Contributors are expected to adhere to the <a href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md"> CNCF Code of Conduct</a>.
         </p>
-        <p>Jump into our <a href="layer5io.slack.com">Slack</a>! See the <a href="https://layer5.io/community/newcomers">Newcomers' Guide</a> for a tour of resources available to you and submit your <a href="https://layer5.io/newcomers">community member form</a> access to additional resources. Don't forget to join the <a href="https://meshery.io/calendar">Newcomers meeting</a> held every Thursday!
+        <p>Jump into our <a href="https://mesheryio.slack.com">Slack</a>! See the <a href="https://layer5.io/community/newcomers">Newcomers' Guide</a> for a tour of resources available to you and submit your <a href="https://layer5.io/newcomers">community member form</a> access to additional resources. Don't forget to join the <a href="https://meshery.io/calendar">Newcomers meeting</a> held every Thursday!
         </p>
         <img src="https://raw.githubusercontent.com/layer5io/.github/master/assets/community.png"
             style="margin:10px;" width="180px" alt="Community" align="right" />
@@ -142,7 +142,7 @@
                 </a><br />
             ✔️ <b>Discuss</b> in the Layer5 <a href="https://meshery.io/community#discussion-forums">Community forum</a><br />
             ✔️ Not sure where to start? <b>Grab</b> an open issue with the <a
-                    href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+label%3A%22help+wanted%22+">help-wanted
+                    href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Ameshery-extensions+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+label%3A%22help+wanted%22+">help-wanted
                     label</a><br />
         </ul>
     </div>
