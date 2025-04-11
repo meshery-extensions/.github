@@ -1,7 +1,7 @@
 <div>
     <!-- Top section -->
     <div>
-        <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/meshery-extensions-github.png" usemap="#workmap"  />
+        <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-github.png" usemap="#workmap"  />
     </div>
     <!-- Overview section -->
     <div align="center">
