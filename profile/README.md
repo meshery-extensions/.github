@@ -16,6 +16,7 @@
         </h5>
         <br />
     </div>
+     <!-- Blog Post and Explanation section -->
     <!-- Video Section -->
     <h3 align="center">See Meshery and it's plugins in-action</h3>
     <a href="https://youtu.be/034nVaQUyME">
