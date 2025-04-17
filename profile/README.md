@@ -6,23 +6,14 @@
     <!-- Overview section -->
     <div align="center">
         <h3>Meshery is an extensible, self-service engineering plaform for the collaborative management of cloud and cloud native infrastructure.</h3>
-        <h4><a href="https://meshery.io/extensions">Browse all extensions</a></h4>
-        <!-- <a href="http://discuss.meshery.io" alt="Discuss Users">
-            <img
-                src="https://img.shields.io/discourse/users?label=discuss&logo=discourse&server=https%3A%2F%2Fdiscuss.layer5.io" /></a>
-        <a href="https://slack.meshery.io" alt="Join Slack">
-            <img src="https://img.shields.io/badge/Slack-@layer5.svg?logo=slack" /></a>
-        <a href="https://twitter.com/intent/follow?screen_name=mesheryio" alt="Twitter Follow">
-            <img src="https://img.shields.io/twitter/follow/mesheryio.svg?label=Follow+Meshery&style=social" /></a>
-        <br />
-        <br /> -->
-        <h4 align="center">
+        <h3 align="center"><a href="https://meshery.io/extensions">Browse all extensions</a></h3>
+        <h5 align="center">
             <a href="https://meshery.io#getting-started">Installation</a> |
             <a href="https://docs.meshery.io">Documentation</a> |
             <a href="https://docs.meshery.io">Forum</a> |
             <a href="https://play.meshery.io">Playground</a> |
             <a href="https://meshery.io/catalog">Catalog</a>
-        </h4>
+        </h5>
         <br />
     </div>
     <!-- Video Section -->
