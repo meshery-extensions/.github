@@ -16,12 +16,20 @@
         </h5>
         <br />
     </div>
+[Meshery Extensions](https://meshery.io/extension) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different types of extensions ([docs](https://docs.meshery.io/extensions/)):
+
+- [Adapters](https://docs.meshery.io/concepts/architecture/adapters): Adapters allow Meshery to interface with the different cloud native infrastructure.
+- [Load Generators](https://docs.meshery.io/extensibility/load-generators): for performance characterization and benchmarking
+- [Integrations](https://docs.meshery.io/extensibility/integrations): model-based support for a broad variety of design and orchestration of cloud and cloud native platforms, tools, and technologies.
+- [Providers](https://docs.meshery.io/extensibility/providers): for connecting to different cloud providers and infrastructure platforms
+- [UI Plugins](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
+<!-- TODO: NEW PAGE NEEDED HERE: - CLI Plugins:  -->    
      <!-- Blog Post and Explanation section -->
     <!-- Video Section -->
-    <h3 align="center">See Meshery and it's plugins in-action</h3>
-    <a href="https://youtu.be/034nVaQUyME">
-        <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/video.png"  />
-    </a>
+<h3 align="center">See Meshery and it's plugins in-action</h3>
+  <a href="https://youtu.be/034nVaQUyME">
+    <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/video.png"  />
+  </a>
     <div align="center"><i>Example extension. See other <a href="https://meshery.io/extensions">Meshery Extensions</a>.<i></div>
     <br />
     <!-- Repositories section -->
