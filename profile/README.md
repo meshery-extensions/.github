@@ -132,7 +132,7 @@
         </p>
         <p>Jump into our <a href="https://slack.meshery.io">Slack</a>! Submit your <a href="https://meshery.io/newcomers">community member form</a> access to additional resources. Don't forget to join the <a href="https://meshery.io/calendar">Newcomers meeting</a> held every Thursday!
         </p>
-        <img src="https://raw.githubusercontent.com/meshery/.github/master/assets/community.png"
+        <img src="https://raw.githubusercontent.com/meshery/meshery/refs/heads/master/.github/assets/images/readme/community.png"
             style="margin:10px;" width="180px" alt="Community" align="right" />
         <ul>
             ✔️ <b>Star</b> ⭐ the main <a href="https://github.com/meshery/meshery">meshery repo</a><br />
