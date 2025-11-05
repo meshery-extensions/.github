@@ -16,8 +16,10 @@
         </h5>
         <br />
     </div>
-    
-[Meshery Extensions](https://meshery.io/extension) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different types of extensions ([docs](https://docs.meshery.io/extensions/)):
+
+Meshery's [high project velocity](https://meshery.io/blog/sixth-highest-velocity-cncf-project) necessitates a revision in its governance and organizational structure to align with the scale of its growing complexity and community contributions. To best serve its expansive ecosystem, Meshery maintainers have opted to partition its numerous GitHub repositories into two distinct organizations: [github.com/meshery](https://github.com/meshery) for the core platform and [meshery-extensions](https://github.com/meshery-extensions) for [extensions](https://meshery.io/extensions) and [integrations](https://meshery.io/integrations).
+
+[Meshery Extensions](https://meshery.io/extension) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different [types of extensions](https://docs.meshery.io/extensions/)):
 
 - [Adapters](https://docs.meshery.io/concepts/architecture/adapters): Adapters allow Meshery to interface with the different cloud native infrastructure.
 - [Load Generators](https://docs.meshery.io/extensibility/load-generators): for performance characterization and benchmarking
@@ -25,6 +27,7 @@
 - [Providers](https://docs.meshery.io/extensibility/providers): for connecting to different cloud providers and infrastructure platforms
 - [UI Plugins](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
 <!-- TODO: NEW PAGE NEEDED HERE: - CLI Plugins:  --> 
+This organization is managed by Meshery core and extension maintainers. Repositories in this organization need to be sponsored and created by one or more of the core maintainers. Read more about the [rationale for the project's multi-organization approach and it's governance structure](https://meshery.io/blog/2025/meshery-ecosystem-expansion).
 
 <!-- Blog Post and Explanation section -->
 <!-- Video Section -->
