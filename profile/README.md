@@ -24,8 +24,7 @@
 - [Integrations](https://docs.meshery.io/extensibility/integrations): model-based support for a broad variety of design and orchestration of cloud and cloud native platforms, tools, and technologies.
 - [Providers](https://docs.meshery.io/extensibility/providers): for connecting to different cloud providers and infrastructure platforms
 - [UI Plugins](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
-<!-- TODO: NEW PAGE NEEDED HERE: - CLI Plugins:  --> 
-
+- [CLI Plugins](https://docs.meshery.io/extensibility/cli-plugins): Helm and kubectl plugins that let you create Kanvas snapshots from Helm charts, Kubernetes manifests, and the current state of your Kubernetes cluster, then upload them to Meshery.
 <!-- Blog Post and Explanation section -->
 <!-- Video Section -->
 <h3 align="center">See Meshery and it's plugins in-action</h3>
