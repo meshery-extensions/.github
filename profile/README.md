@@ -17,14 +17,16 @@
         <br />
     </div>
     
-[Meshery Extensions](https://meshery.io/extension) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different types of extensions ([docs](https://docs.meshery.io/extensions/)):
+[Meshery Extensions](https://meshery.io/extensions) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different types of extensions ([docs](https://docs.meshery.io/extensions/)):
 
 - [Adapters](https://docs.meshery.io/concepts/architecture/adapters): Adapters allow Meshery to interface with the different cloud native infrastructure.
 - [Load Generators](https://docs.meshery.io/extensibility/load-generators): for performance characterization and benchmarking
 - [Integrations](https://docs.meshery.io/extensibility/integrations): model-based support for a broad variety of design and orchestration of cloud and cloud native platforms, tools, and technologies.
 - [Providers](https://docs.meshery.io/extensibility/providers): for connecting to different cloud providers and infrastructure platforms
-- [UI Plugins](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
-- [CLI Plugins](https://docs.meshery.io/extensibility/cli-plugins): Helm and kubectl plugins that let you create Kanvas snapshots from Helm charts, Kubernetes manifests, and the current state of your Kubernetes cluster, then upload them to Meshery.
+- [UI](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
+- CLI: Helm and _kubectl_ plugins that let you create Kanvas snapshots from Helm charts, Kubernetes manifests, and the current state of your Kubernetes cluster, then upload them to Meshery.
+    - [Kubectl CLI Plugin](https://docs.meshery.io/extensions/kubectl-meshsync-snapshot/)
+    - [Helm CLI Plugin](https://docs.meshery.io/extensions/helm-kanvas-snapshot/)
 <!-- Blog Post and Explanation section -->
 <!-- Video Section -->
 <h3 align="center">See Meshery and it's plugins in-action</h3>
@@ -32,96 +34,95 @@
 <!--     <div align="center"><i>Example extension. See other <a href="https://meshery.io/extensions">Meshery Extensions</a>.<i></div>
     <br /> -->
     <!-- Repositories section -->
-    <div>
-        <h2>Repositories</h2>
-        <table border="0px" align="center">
-            <tr>
-                <!-- Meshery -->
-                <td style="padding: 28px;">
-                    <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/car.svg" width="180px" align="right" style="margin-top: 2rem;" />
-                    <h2 align="left"><a href="https://github.com/meshery/meshery">Meshery</a></h2>
-                    <img src="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo.svg" 
-                        style="margin-right:10px;" width="75px" alt="Meshery" align="left" />
-                    <p>
-                    <p>As a self-service engineering platform, Meshery enables collaborative design and operation of
-                        cloud native infrastructure.</p>
-                    <p align="left"><a href="https://github.com/meshery/meshery/graphs/contributors"
-                            alt="GitHub contributors"><img
-                                src="https://img.shields.io/github/contributors/Meshery/meshery.svg" /></a>
-                                <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+org%3A+label%3A%22help+wanted%22+" alt="GitHub issues by-label">
-                                <img src="https://img.shields.io/github/issues/meshery/meshery/help%20wanted.svg?color=informational" /></a>
-                    </p>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <!-- MeshSync -->
-                <td style="padding: 28px;">
-                    <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/five-sitting.svg" width="180px" align="right"/>
-                    <h2 align="left"><a href="https://github.com/meshery/meshsync">MeshSync</a></h2>
-                    <img src="https://raw.githubusercontent.com/meshery/meshsync/master/.github/readme/images/meshsync.svg"
-                        style="margin-right:10px;" width="75px" alt="Meshery" align="left" />
-                    <p>MeshSync one of a family of custom controllers within Meshery Operator.</p>
-                    <p align="left"><a href="https://github.com/meshery/meshsync/graphs/contributors"
-                            alt="GitHub contributors"><img
-                                src="https://img.shields.io/github/contributors/Meshery/meshsync.svg" /></a>
-                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+org%3A+label%3A%22help+wanted%22+" alt="GitHub issues by-label">
-                                <img src="https://img.shields.io/github/issues/meshery/meshsync/help%20wanted.svg?color=informational" /></a>
-                </td>
-            </tr>
-            <tr>
-                <!-- Meshery Operator -->
-                <td style="padding: 28px;">
-                    <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/five-with-meshery.svg" width="180px" style="margin-left: 10px;" align="right"/>
-                    <h2 align="left"><a href="https://github.com/meshery/meshery-operator">Meshery Operator</a></h2>
-                    <img src="https://raw.githubusercontent.com/meshery/meshery-operator/master/img/readme/meshery-operator-dark.svg"
-                        style="margin-right:10px;" width="75px" alt="Meshery" align="left" />
-                    <p>Meshery Operator is a Kubernetes Operator that deploys and manages the lifecycle of two Meshery
-                        components critical to Meshery's operations of Kubernetes clusters</p>
-                    <p align="left"><a href="https://github.com/meshery/meshery-operator/graphs/contributors"
-                            alt="GitHub contributors"><img
-                                src="https://img.shields.io/github/contributors/Meshery/meshery-operator.svg" /></a>
-                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+org%3A+label%3A%22help+wanted%22+" alt="GitHub issues by-label">
-                                <img src="https://img.shields.io/github/issues/meshery/meshery-operator/help%20wanted.svg?color=informational" /></a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <!-- Meshkit -->
-                <td style="padding: 28px;">
-                    <!-- <hr style="border: 1px dotted #aaaaaaa;" /> -->
-                    <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/five-inside-rocket.svg" width="180px" align="right"/>
-                    <h2 align="left"><a href="https://github.com/meshery/meshkit">MeshKit</a></h2>
-                    <img src="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo.svg"
-                        style="margin-right:10px;" width="75px" alt="Meshery" align="left" />
-                    <p>Common microservices framework for Meshery components</p>
-                    <p align="left"><a href="https://github.com/meshery/meshkit/graphs/contributors"
-                            alt="GitHub contributors"><img
-                                src="https://img.shields.io/github/contributors/Meshery/meshkit.svg" /></a>
-                                <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+org%3A+label%3A%22help+wanted%22+" alt="GitHub issues by-label">
-                                <img src="https://img.shields.io/github/issues/meshery/meshkit/help%20wanted.svg?color=informational" /></a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <!-- Meshery.io -->
-                <td style="padding: 28px;">
-                    <img src="https://raw.githubusercontent.com/meshery/.github/master/profile/assets/img/five-at-door.svg" width="180px" align="right" />
-                    <h2 align="left"><a href="https://github.com/meshery/meshery.io">Meshery.io</a></h2>
-                    <img src="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo.svg"
-                        style="margin-right:10px;" width="75px" alt="Meshery" align="left" />
-                    <p>Site for Meshery, the cloud native manager.</p>
-                    <p align="left"><a href="https://github.com/meshery/meshery.io/graphs/contributors"
-                            alt="GitHub contributors">
-                    <img
-                                src="https://img.shields.io/github/contributors/Meshery/meshery.io.svg" /></a>
-                                <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+org%3A+label%3A%22help+wanted%22+" alt="GitHub issues by-label">
-                                <img src="https://img.shields.io/github/issues/meshery/meshery.io/help%20wanted.svg?color=informational" /></a>
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </div>
+<div>
+    <h2>Repositories</h2>
+    <table border="0px" align="center">
+        <tr>
+            <!-- kanvas-site -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/kanvas-site">kanvas-site</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>The documentation, platform web application site, and landing interface for Kanvas—the collaborative visual designer for cloud-native infrastructure.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/kanvas-site/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/kanvas-site.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Akanvas-site+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/kanvas-site/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- kanvas-snapshot -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/kanvas-snapshot">kanvas-snapshot</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>The core rendering library and shared framework driving visual topology captures, state comparison engines, and design export workflows across CLI and Helm extensions.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/kanvas-snapshot/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/kanvas-snapshot.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Akanvas-snapshot+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/kanvas-snapshot/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- kubectl-kanvas-snapshot -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/kubectl-kanvas-snapshot">kubectl-kanvas-snapshot</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>A native command-line <code>kubectl</code> plugin configured to easily generate exportable architectural design blueprints and snapshots of live Kubernetes clusters.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/kubectl-kanvas-snapshot/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/kubectl-kanvas-snapshot.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Akubectl-kanvas-snapshot+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/kubectl-kanvas-snapshot/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- helm-kanvas-snapshot -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/helm-kanvas-snapshot">helm-kanvas-snapshot</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>A Helm plugin extension engineered to generate exportable visual architectural maps and structural snapshots directly from packaged Helm charts.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/helm-kanvas-snapshot/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/helm-kanvas-snapshot.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Ahelm-kanvas-snapshot+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/helm-kanvas-snapshot/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- meshery-nighthawk -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/meshery-nighthawk">meshery-nighthawk</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>An extension adapter designed for managing and orchestrating Nighthawk—the distributed layer-seven traffic and performance benchmarking subsystem.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/meshery-nighthawk/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/meshery-nighthawk.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Ameshery-nighthawk+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/meshery-nighthawk/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- meshery-extensions-packages -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/meshery-extensions-packages">meshery-extensions-packages</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>The centralized distribution hub for packaging, versioning, and releasing bundled assets, plugins, and compiled components across the extended Meshery ecosystem.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/meshery-extensions-packages/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/meshery-extensions-packages.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Ameshery-extensions-packages+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/meshery-extensions-packages/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- meshery-academy -->
+            <td style="padding: 28px;">
+                <h2 align="left"><a href="https://github.com/meshery-extensions/meshery-academy">meshery-academy</a></h2>
+                <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
+                <p>The central community interactive learning repository hosting courseware, lab setups, and certification trees for Meshery's broad extension ecosystem.</p>
+                <p align="left">
+                    <a href="https://github.com/meshery-extensions/meshery-academy/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/meshery-academy.svg" /></a>
+                    <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Ameshery-academy+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/meshery-academy/help%20wanted.svg?color=informational" /></a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
     <!-- Contributing and Guidelines -->
     <div>
         <h2>Community and Contributing</h2>
