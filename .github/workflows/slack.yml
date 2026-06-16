@@ -17,7 +17,7 @@ jobs:
           echo "STARS=$(curl --silent 'https://api.github.com/repos/${{ github.repository }}' -H 'Accept: application/vnd.github.preview' | jq '.stargazers_count')" >> $GITHUB_ENV
 
       - name: Notify Slack
-        uses: slackapi/slack-github-action@v2.1.1
+        uses: slackapi/slack-github-action@v2
         with:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
@@ -32,10 +32,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Notify Slack
-        uses: slackapi/slack-github-action@v2.1.1
+        uses: slackapi/slack-github-action@v2
         with:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             channel: C019426UBNY
-            text: ":new: Good first issue up for grabs: <${{ github.event.issue.title }}|${{ github.event.issue.html_url }}>"
+            text: ":new: Good first issue up for grabs: <${{ github.event.issue.html_url }}|${{ github.event.issue.title }}>"
