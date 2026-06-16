@@ -30,6 +30,7 @@ Meshery's [high project velocity](https://meshery.io/blog/sixth-highest-velocity
 - [Load Generators](https://docs.meshery.io/extensibility/load-generators): for performance characterization and benchmarking.
 - [Models](https://docs.meshery.io/extensions/models/): component-based (semantically and non-semantically meaningful) support for a broad variety of platforms, tools, and technologies.
 - [Providers](https://docs.meshery.io/extensibility/providers): for connecting to different cloud providers and infrastructure platforms.
+- [Schemas](https://docs.meshery.io/reference/extensibility/schemas/) - Meshery schemas are conscientiously extensible via `x-*` vendor extensions.
 - [UI Plugins](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
 
 This organization is managed by Meshery core and extension maintainers. Repositories in this organization need to be sponsored and created by one or more of the core maintainers. Read more about the [rationale for the project's multi-organization approach and it's governance structure](https://meshery.io/blog/2025/meshery-ecosystem-expansion).
