@@ -19,7 +19,7 @@
     
 [Meshery Extensions](https://meshery.io/extensions) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different types of extensions ([docs](https://docs.meshery.io/extensions/)):
 
-- [Academies](https://docs.meshery.io/extensions/academies): Academy extensions enable Meshery as an integrated learning platform. 
+- [Academies](https://docs.meshery.io/extensions/academies): Academy extensions enable Meshery as an integrated learning platform.
 - [Adapters](https://docs.meshery.io/concepts/architecture/adapters): Adapters allow Meshery to interface with the different cloud native infrastructure.
 - CLI: Helm and _kubectl_ plugins that let you create Kanvas snapshots from Helm charts, Kubernetes manifests, and the current state of your Kubernetes cluster, then upload them to Meshery.
     - [Kubectl CLI Plugin](https://docs.meshery.io/extensions/kubectl-meshsync-snapshot/)
