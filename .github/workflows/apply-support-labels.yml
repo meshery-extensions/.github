@@ -1,0 +1,25 @@
+name: Apply support labels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "support-labels/manifest.yaml"
+  workflow_dispatch: {}
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq \
+            https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Apply support labels
+        env:
+          GH_TOKEN: ${{ secrets.SUPPORT_LABELS_TOKEN }}
+        run: bash support-labels/scripts/apply-support-labels.sh support-labels/manifest.yaml
