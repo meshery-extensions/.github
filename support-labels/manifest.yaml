@@ -12,7 +12,7 @@
 #   community - Maintained by community contributors, with support and
 #               release cadence determined by those maintainers.
 #
-# Do not hand-edit values on github.com. Edit this file and push to main;
+# Do not hand-edit values on github.com. Edit this file and push to master;
 # apply-support-labels.yml pushes the change out to both orgs.
 
 schema_version: 1

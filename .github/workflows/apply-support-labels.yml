@@ -2,7 +2,7 @@ name: Apply support labels
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - "support-labels/manifest.yaml"
   workflow_dispatch: {}
