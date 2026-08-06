@@ -15,7 +15,7 @@ maintained in one place.
 
 ## Community
 
-[![support: community](https://img.shields.io/badge/support-community-2da44e)](https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions)
+[![support: community](https://img.shields.io/badge/support-community-00B39F)](https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions)
 
 ```
 [![support: community](https://img.shields.io/badge/support-community-2da44e)](https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions)
