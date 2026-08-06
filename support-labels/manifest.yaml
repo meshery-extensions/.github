@@ -1,0 +1,117 @@
+# Meshery support-level manifest
+#
+# Canonical source of truth for the "support" custom property applied to
+# every repository in github.com/meshery and github.com/meshery-extensions.
+# This file is derived from the "meshery-extensions repos by support type"
+# sheet and implements GOVERNANCE.md's "Support labeling" bullet under
+# Extensions (github.com/meshery-extensions):
+#
+#   official  - Maintained by the core maintainers or designated
+#               maintainers, with robust support and compatibility
+#               testing against supported core releases.
+#   community - Maintained by community contributors, with support and
+#               release cadence determined by those maintainers.
+#
+# Do not hand-edit values on github.com. Edit this file and push to main;
+# apply-support-labels.yml pushes the change out to both orgs.
+
+schema_version: 1
+
+organizations:
+  meshery:
+    # The core platform is support/official by definition (GOVERNANCE.md,
+    # Core platform section). Individual core repos are not enumerated here;
+    # every repo in this org gets default_label unless listed in overrides.
+    default_label: official
+    overrides: []
+
+  meshery-extensions:
+    # No default: GOVERNANCE.md requires each extension to carry an explicit
+    # label, so every repo must appear below. A repo missing from this list
+    # is a manifest bug, not an "inherit the default" case.
+    default_label: null
+    repos:
+      - name: meshery-istio
+        label: official
+        status: active
+      - name: meshery-linkerd
+        label: official
+        status: active
+      - name: meshery-consul
+        label: official
+        status: active
+      - name: meshery-nsm
+        label: official
+        status: active
+      - name: meshery-app-mesh
+        label: official
+        status: active
+      - name: meshery-traefik-mesh
+        label: official
+        status: active
+      - name: meshery-kuma
+        label: official
+        status: active
+      - name: meshery-adapter-template
+        label: official
+        status: active
+      - name: meshery-nginx-sm
+        label: official
+        status: active
+      - name: meshery-extensions-packages
+        label: community
+        status: active
+      - name: meshery-cilium
+        label: official
+        status: active
+      - name: meshery-nighthawk
+        label: official
+        status: active
+      - name: kanvas-snapshot
+        label: community
+        status: active
+      - name: helm-kanvas-snapshot
+        label: community
+        status: active
+      - name: kubectl-kanvas-snapshot
+        label: community
+        status: active
+      - name: kubectl-meshsync-snapshot
+        label: official
+        status: active
+      - name: .github
+        label: official
+        status: active
+      - name: shape-builder
+        label: community
+        status: active
+      - name: digitalocean-academy
+        label: community
+        status: active
+      - name: meshery-academy
+        label: community
+        status: active
+      - name: tcslabs-academy
+        label: community
+        status: active
+      - name: kanvas-site
+        label: community
+        status: active
+      - name: integrations-workflow
+        label: official
+        status: active
+      - name: meshery-mcp-server
+        label: community
+        status: active
+      - name: meshery-octarine
+        label: official
+        status: archived
+      - name: meshery-cpx
+        label: official
+        status: archived
+      - name: meshery-tanzu-sm
+        label: official
+        status: archived
+      - name: meshery-osm
+        label: official
+        status: archived
