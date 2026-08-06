@@ -1,0 +1,23 @@
+name: Audit support labels
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # every Monday
+  workflow_dispatch: {}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq \
+            https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Audit support labels
+        env:
+          GH_TOKEN: ${{ secrets.SUPPORT_LABELS_TOKEN }}
+        run: bash support-labels/scripts/audit-support-labels.sh support-labels/manifest.yaml
