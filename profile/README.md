@@ -353,7 +353,7 @@ This organization is managed by Meshery's core and extension maintainers, and ne
                 <img src="https://raw.githubusercontent.com/meshery-extensions/.github/master/profile/assets/img/meshery-extensions-color.svg" style="margin-right:10px;" width="75px" alt="Meshery Logo" align="left" />
                 <p>The Meshery Academy for TCS Labs—a partner-tailored learning path of courses, labs, and challenges built on the Academy platform.</p>
                 <p align="left">
-                    <a href="https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions"><img src="https://img.shields.io/badge/support-official-2f6feb?style=flat-square&logo=meshery&logoColor=white" alt="Level of support for this repo" /></a>
+                    <a href="https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions"><img src="https://img.shields.io/badge/support-community-00B39F?style=flat-square&logo=meshery&logoColor=white" alt="Level of support for this repo" /></a>
                     <a href="https://github.com/meshery-extensions/tcslabs-academy/graphs/contributors"><img src="https://img.shields.io/github/contributors/meshery-extensions/tcslabs-academy.svg" /></a>
                     <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Ameshery-extensions+repo%3Atcslabs-academy+label%3A%22help+wanted%22+"><img src="https://img.shields.io/github/issues/meshery-extensions/tcslabs-academy/help%20wanted.svg?color=informational" /></a>
                 </p>
