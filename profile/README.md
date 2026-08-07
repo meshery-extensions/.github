@@ -16,13 +16,10 @@
         </h5>
         <br />
     </div>
-
-Meshery's [high project velocity](https://meshery.io/blog/sixth-highest-velocity-cncf-project) necessitates a revision in its governance and organizational structure to align with the scale of its growing complexity and community contributions. To best serve its expansive ecosystem, Meshery maintainers have opted to partition its numerous GitHub repositories into two distinct organizations: [github.com/meshery](https://github.com/meshery) for the core platform and [meshery-extensions](https://github.com/meshery-extensions) for [extensions](https://meshery.io/extensions) and [integrations](https://meshery.io/integrations).
-
-[Meshery Extensions](https://meshery.io/extension) are plugins or add-ons that enhance the functionality of the Meshery platform beyond its core capabilities. Meshery supports different [types of extensions](https://docs.meshery.io/extensions/)):
-
+This organization is home to [Meshery's extensions](https://meshery.io/extensions): the adapters, integrations, and plugins that connect Meshery to the cloud native tools you already use. Core platform development happens over in [github.com/meshery](https://github.com/meshery); everything here in **meshery-extensions** builds on that core, adding new [integrations](https://meshery.io/integrations) and extending what Meshery can do.
+Extensions come in several flavors, covering the different [types of extensions](https://docs.meshery.io/extensions/) Meshery supports:
 - [Academies](https://docs.meshery.io/extensions/academies): Academy extensions enable Meshery as an integrated learning platform.
-- [Adapters](https://docs.meshery.io/concepts/architecture/adapters): Adapters allow Meshery to interface with the different cloud native infrastructure.\
+- [Adapters](https://docs.meshery.io/concepts/architecture/adapters): Adapters allow Meshery to interface with different cloud native infrastructure.
 - [Build-time](https://docs.meshery.io/reference/extensibility/build-time/): enable integrators to inject custom configurations, data, provider extensions, and other resources directly into the Meshery container image at build-time.
 - CLI: Helm and _kubectl_ plugins that let you create Kanvas snapshots from Helm charts, Kubernetes manifests, and the current state of your Kubernetes cluster, then upload them to Meshery.
     - [Kubectl CLI Plugin](https://docs.meshery.io/extensions/kubectl-meshsync-snapshot/)
@@ -32,9 +29,7 @@ Meshery's [high project velocity](https://meshery.io/blog/sixth-highest-velocity
 - [Providers](https://docs.meshery.io/extensibility/providers): for connecting to different cloud providers and infrastructure platforms.
 - [Schemas](https://docs.meshery.io/reference/extensibility/schemas/) - Meshery schemas are conscientiously extensible via `x-*` vendor extensions.
 - [UI Plugins](https://docs.meshery.io/extensibility/ui): Meshery UI has a number of extension points that allow users to customize their experience with third-party plugins.
-
-This organization is managed by Meshery core and extension maintainers. Repositories in this organization need to be sponsored and created by one or more of the core maintainers. Read more about the [rationale for the project's multi-organization approach and it's governance structure](https://meshery.io/blog/2025/meshery-ecosystem-expansion).
-
+This organization is managed by Meshery's core and extension maintainers, and new repositories here are sponsored and created by one or more of them. Curious why extensions live in a separate organization from the core platform? As Meshery grew into one of the [highest-velocity projects in the CNCF](https://meshery.io/blog/sixth-highest-velocity-cncf-project), managing hundreds of integrations within a single organization became unwieldy, so maintainers split things up for cleaner permissions, contribution flows, and release cycles. Read the full story in [The Meshery Umbrella Expands](https://meshery.io/blog/2025/meshery-ecosystem-expansion).
 <!-- Blog Post and Explanation section -->
 <!-- Video Section -->
 <h3 align="center">See Meshery and it's plugins in-action</h3>
@@ -425,23 +420,22 @@ This organization is managed by Meshery core and extension maintainers. Reposito
     <!-- Contributing and Guidelines -->
     <div>
         <h2>Community and Contributing</h2>
-        <p>Please do! Code and non-code contributions are welcome. This project is community-built and fosters collaboration. Contributors are expected to adhere to the <a href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md"> CNCF Code of Conduct</a>.
+        <p>Please do! Code and non-code contributions are welcome. This project is community-built and fosters collaboration. Contributors are expected to adhere to the <a href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md"> CNCF Code of Conduct</a>.
         </p>
-        <p>Jump into our <a href="https://slack.meshery.io">Slack</a>! Submit your <a href="https://meshery.io/newcomers">community member form</a> access to additional resources. Don't forget to join the <a href="https://meshery.io/calendar">Newcomers meeting</a> held every Thursday!
+        <p>Jump into our <a href="https://slack.meshery.io">Slack</a>! Submit your <a href="https://meshery.io/newcomers">community member form</a> to access additional resources. Don't forget to join the <a href="https://meshery.io/calendar">Newcomers meeting</a> held every Thursday!
         </p>
         <img src="https://raw.githubusercontent.com/meshery/meshery/refs/heads/master/.github/assets/images/readme/community.png"
             style="margin:10px;" width="180px" alt="Community" align="right" />
         <ul>
             ✔️ <b>Star</b> ⭐ the main <a href="https://github.com/meshery/meshery">meshery repo</a><br />
-            ✔️ <b>Join</b> any or all of the weekly meetings on the <a href="https://meet.meshery.io">community
+            ✔️ <b>Join</b> any or all of the weekly meetings on the <a href="https://meet.meshery.io">community
                     calendar</a><br />
             ✔️ <b>Watch</b> <a
-                    href="https://www.youtube.com/@mesheryio?sub_confirmation=1">community meeting
+                    href="https://www.youtube.com/@mesheryio?sub_confirmation=1">community meeting
                     recordings</a><br />
-            <p>✔️ <b>Access</b> resources by completing a <a href="https://meshery.io/newcomers"> community member form
-                </a><br />
-            ✔️ <b>Discuss</b> in a Meshery <a href="https://discuss.meshery.io">Community forum</a><br />
-            ✔️ Not sure where to start? <b>Grab</b> an open issue with the <a
+            ✔️ <b>Access</b> resources by completing a <a href="https://meshery.io/newcomers">community member form</a><br />
+            ✔️ <b>Discuss</b> in a Meshery <a href="https://discuss.meshery.io">Community forum</a><br />
+            ✔️ Not sure where to start? <b>Grab</b> an open issue with the <a
                     href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+(org%3Ameshery+OR+org%3Aservice-mesh-performance+OR+org%3Aservice-mesh-patterns+OR+org%3Ameshery-extensions)+label%3A%22help+wanted%22">help-wanted
                     label</a><br />
         </ul>
