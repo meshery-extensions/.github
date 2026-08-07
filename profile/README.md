@@ -433,8 +433,7 @@ This organization is managed by Meshery's core and extension maintainers, and ne
             ✔️ <b>Watch</b> <a
                     href="https://www.youtube.com/@mesheryio?sub_confirmation=1">community meeting
                     recordings</a><br />
-            <p>✔️ <b>Access</b> resources by completing a <a href="https://meshery.io/newcomers"> community member form
-                </a><br />
+            ✔️ <b>Access</b> resources by completing a <a href="https://meshery.io/newcomers">community member form</a><br />
             ✔️ <b>Discuss</b> in a Meshery <a href="https://discuss.meshery.io">Community forum</a><br />
             ✔️ Not sure where to start? <b>Grab</b> an open issue with the <a
                     href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+(org%3Ameshery+OR+org%3Aservice-mesh-performance+OR+org%3Aservice-mesh-patterns+OR+org%3Ameshery-extensions)+label%3A%22help+wanted%22">help-wanted
