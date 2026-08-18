@@ -16,6 +16,7 @@
         </h5>
         <br />
     </div>
+    
 This organization is home to [Meshery's extensions](https://meshery.io/extensions): the adapters, integrations, and plugins that connect Meshery to the cloud native tools you already use. Core platform development happens over in [github.com/meshery](https://github.com/meshery); everything here in **meshery-extensions** builds on that core, adding new [integrations](https://meshery.io/integrations) and extending what Meshery can do.
 Extensions come in several flavors, covering the different [types of extensions](https://docs.meshery.io/extensions/) Meshery supports:
 - [Academies](https://docs.meshery.io/extensions/academies): Academy extensions enable Meshery as an integrated learning platform.
