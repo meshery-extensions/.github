@@ -8,16 +8,24 @@ on:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    env:
+      SUPPORT_LABELS_TOKEN: ${{ secrets.SUPPORT_LABELS_TOKEN }}
     steps:
       - uses: actions/checkout@v7
 
+      - name: Skip audit when support-labels token is unavailable
+        if: ${{ env.SUPPORT_LABELS_TOKEN == '' }}
+        run: echo "::notice::SUPPORT_LABELS_TOKEN is not configured; skipping support-label audit."
+
       - name: Install yq
+        if: ${{ env.SUPPORT_LABELS_TOKEN != '' }}
         run: |
           sudo wget -qO /usr/local/bin/yq \
             https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod +x /usr/local/bin/yq
 
       - name: Audit support labels
+        if: ${{ env.SUPPORT_LABELS_TOKEN != '' }}
         env:
-          GH_TOKEN: ${{ secrets.SUPPORT_LABELS_TOKEN }}
+          GH_TOKEN: ${{ env.SUPPORT_LABELS_TOKEN }}
         run: bash support-labels/scripts/audit-support-labels.sh support-labels/manifest.yaml
